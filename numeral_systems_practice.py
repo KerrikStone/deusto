@@ -52,7 +52,7 @@ while True:
         '- Decimal -> Hexadecimal (dh)\n'
         '- BCD -> Decimal (bcdd)\n'
         '- Decimal -> BCD (dbcd)\n'
-        '¡Escribe las iniciales que están entre parentesis para seleccionar el modo que quieras!'
+        '¡Escribe las iniciales que están entre parentesis para seleccionar el modo que quieras! '
         'Ej.: bd (x para salir del programa)\n'
         )
     if user_input == 'x':
