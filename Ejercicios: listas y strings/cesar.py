@@ -8,11 +8,14 @@ posiciones cada letra).
 import string
 
 
-inp1 = input('Texto: ')
+inp1 = input('Texto: ').lower()
 inp2 = int(input('Desplazamiento: '))
 
 cifrado = ''
 for n in range(len(inp1)):
-    cifrado += string.ascii_lowercase[list(string.ascii_lowercase).index(inp1[n]) + inp2]
+    if inp1[n] == ' ':
+        cifrado += ' '
+    else:
+        cifrado += string.ascii_uppercase[(string.ascii_lowercase.index(inp1[n]) + inp2) % len(string.ascii_lowercase)]
 
 print(cifrado)
