@@ -1,4 +1,4 @@
-# Authors: Erik Coruña
+# Author: Erik Coruña
 
 from random import randrange
 from sys import platform
