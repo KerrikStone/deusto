@@ -74,7 +74,6 @@ def asignatura_con_mas_suspensos(estudiantes: list[dict]) -> str:
     return sorted(asignaturas_suspendidas.items(), key=lambda x: x[1])[-1][0]
 
 
-
 def numero_estudiantes_poblacion(estudiantes: list[dict]) -> dict:
     diccionario_final = {}
     for e in estudiantes:
@@ -83,7 +82,6 @@ def numero_estudiantes_poblacion(estudiantes: list[dict]) -> dict:
         else:
             diccionario_final[e['poblacion']] = 1
     return diccionario_final
-
 
 
 if __name__ == '__main__':
